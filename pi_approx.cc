@@ -37,12 +37,9 @@ double nilakantha(int its) {
 }
 int main(int argc, char* argv[])
 {
-  if (argc!=2) {
-    Crash();
-  } else {
+  if (argc!=2) { Crash(); }
   int its = atoi(argv[1]);
   printf("Leibniz:\t%.20f\n", leibniz(its));
   printf("Nilakantha:\t%.20f\n", nilakantha(its));
   return 0;
-  }
 }
